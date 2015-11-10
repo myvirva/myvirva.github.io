@@ -35,6 +35,10 @@ ul {
 	float: right;
 }
 
+.textCenter {
+	text-align: center;
+}
+
 .fontSizeSmall {
 	font-size: x-small;
 }
@@ -45,6 +49,10 @@ ul {
 
 .ulCircleStyle {
 	list-style-image: url('images/circle.png');
+}
+
+.transparent-Dark-BG {
+	background: rgba(0, 0, 0, 0.3);
 }
 
 input[type=checkbox].css-checkbox {
@@ -60,18 +68,18 @@ input[type=checkbox].css-checkbox {
 }
 
 input[type=checkbox].css-checkbox + label.css-label {
-	padding-left:24px;
-	height:19px; 
+	padding-left: 24px;
+	height: 19px; 
 	display:inline-block;
 	line-height:19px;
 	background-repeat:no-repeat;
-	background-position: 0 0;
+	background-position: 0 -1px;
 	vertical-align:middle;
 	cursor:pointer;
 }
 
 input[type=checkbox].css-checkbox:checked + label.css-label {
-	background-position: 0 -19px;
+	background-position: 0 -20px;
 }
 
 label.css-label {
@@ -88,7 +96,7 @@ label.css-label {
 	width: 1000px;
 	min-height: 600px;
 	margin: 0 auto;
-	background: white;
+	background: #F3F3F3;
 }
 
 /* HEADER */
@@ -213,7 +221,7 @@ nav#mainnav ul li:last-child a img {
 
 #content {
 	width: 700px;
-	min-height: 900px;
+	min-height: 1000px;
 	float: left;
 	padding: 50px;
 	background: #F3F3F3;
@@ -223,7 +231,7 @@ nav#mainnav ul li:last-child a img {
 	background: #00A6A4;
 	color: white;
 	width: 700px;
-	min-height: 400px;
+	min-height: 200px;
 	font-family: "AvenirNextLTPro-Regular";
 	font-size: 20px;
 	box-shadow: 0 0 30px #000000;
@@ -239,6 +247,7 @@ nav#mainnav ul li:last-child a img {
 
 #formHeader {
 	padding: 10px 25px 0 50px;
+	
 }
 
 #formHeader #heading {
@@ -278,7 +287,7 @@ nav#mainnav ul li:last-child a img {
 
 #sidebar {
 	width: 200px;
-	height: 1000px;
+	height: 1400px;
 	float: right;
 	padding-top: 25px;
 	text-align: center;
@@ -358,7 +367,7 @@ footer {
 	background: #272627;
 	font-family: "AvenirNextLTPro-Regular";
 	clear: both;
-	height: 50px;
+	min-height: 50px;
 }
 
 footer nav {
@@ -409,8 +418,23 @@ footer nav ul li a:hover {
 
 #c_workexp_banner {
 	width: 700px;
-	height: 300px;
-	background: pink;
+	height: 400px;
+	background: url('images/banner-workexp.jpg');
+	position: relative;
+	background-position: center left;
+}
+
+#c_workexp_banner p {
+	font-family: "Elkwood";
+	color: white;
+	font-size: 50px;
+	text-align: center;
+	width: 100%;
+	height: 150px;
+	line-height: 160px;
+	
+	position: absolute; /* MAKES IT AT BOTTOM OF DIV (NEEDS POSITION:RELATIVE FROM PARENT) */
+	bottom: 0;
 }
 
 #c_workexp_StartY,
@@ -438,6 +462,26 @@ footer nav ul li a:hover {
 }
 
 /* CREATIVES - CONTACT DETAILS */
+
+#c_cDetails_banner {
+	width: 100%;
+	height: 400px;
+	background: url('images/banner-contactDetails.jpg');
+	position: relative;
+}
+
+#c_cDetails_banner p {
+	font-family: "Elkwood";
+	color: white;
+	font-size: 50px;
+	text-align: center;
+	width: 100%;
+	height: 150px;
+	line-height: 160px;
+	
+	position: absolute; /* MAKES IT AT BOTTOM OF DIV (NEEDS POSITION:RELATIVE FROM PARENT) */
+	bottom: 0;
+}
 
 #c_cDetailsLeft {
 	padding-left: 75px;
@@ -489,7 +533,7 @@ label[for=rememberMe] {
 #loginContent {
 	width: 100%;
 	min-height: 667px;
-	background-image: url('images/home-image.jpg');
+	background-image: url('images/banner-home.jpg');
 	background-size: 100% 667px;
 	background-repeat: no-repeat;
 	box-sizing: border-box;
@@ -500,7 +544,7 @@ label[for=rememberMe] {
 	color: white;
 	font-size: 50px;
 	text-align: center;
-	background: rgba(0, 0, 0, 0.3);
+
 	height: 150px;
 	line-height: 150px;
 	box-sizing: border-box;
@@ -511,3 +555,302 @@ label[for=rememberMe] {
 	width: 100%;
 }
 
+/* CREATIVES - A HELPING HAND */
+
+#c_helphand_banner {
+	width: 100%;
+	height: 650px;
+	background-image: url('images/banner-helphand.jpg');
+	position: relative;
+}
+
+#c_helphand_banner p {
+	color: white;
+	font-size: 50px;
+	text-align: center;
+	width: 100%;
+
+	height: 150px;
+	line-height: 160px;
+	box-sizing: border-box;
+	font-family: "Elkwood";
+	
+	position: absolute;
+	bottom: 0;
+}
+
+#c_helphand_form {
+	background: #00A6A4;
+	color: white;
+	width: 700px;
+	min-height: 175px;
+	font-family: "AvenirNextLTPro-Regular";
+	font-size: large;
+	box-shadow: 0 0 30px #000000;
+	padding-top: 50px;
+	box-sizing: border-box;
+}
+
+#c_helphand_nav {
+	margin-top: 50px;
+	font-family: "AvenirNextLTPro-Regular";
+	box-shadow: 0 0 30px #000000;
+}
+
+#c_helphand_nav ul {
+	font-size: 0;
+}
+
+#c_helphand_nav ul li {
+	display: inline-block;
+}
+
+#c_helphand_nav ul li a {
+	width: 233.33px;
+	height: 150px;
+	display: inline-block;
+	
+	font-size: medium;
+	background: white;
+	color: black;
+	padding-top: 15px;
+	text-decoration: none;
+	
+	text-align: center;
+	vertical-align: middle;
+	box-shadow: 0 0 3px #000000;
+}
+
+#c_helphand_nav ul li a:hover {
+	background: #00A6A4;
+	color: white;
+	text-decoration: underline;
+}
+
+/* CREATIVES - 2.6 SUCCESS */
+
+#c_success_banner {
+	width: 100%;
+	height: 500px;
+	background-image: url('images/banner-success.jpg');
+	background-position: center -200px;
+	position: relative;
+}
+
+#c_success_banner p {
+	color: white;
+	font-size: 50px;
+	text-align: center;
+	width: 100%;
+
+	height: 150px;
+	line-height: 160px;
+	box-sizing: border-box;
+	font-family: "Elkwood";
+	
+	position: absolute;
+	bottom: 0;
+}
+
+#formHeader h2 {
+	font-family: "Elkwood";
+	text-decoration: underline;
+	font-weight: normal;
+	margin-top: 25px;
+}
+
+#c_successContent {
+	padding: 35px 100px 30px 50px;
+}
+
+.button img {
+	vertical-align: middle;
+	padding-right: 5px;
+}
+
+#c_success_check-icon {
+	height: 30px;
+	padding-left: 7px;
+	vertical-align: middle;
+}
+
+
+/* CREATIVES - HELPING HAND - READY FOR INTERVIEW */
+
+#c_ready4interview_banner {
+	width: 100%;
+	height: 465px;
+	background-image: url('images/banner-interview1.jpg');
+	background-size: 100% 1375px;
+	position: relative;
+}
+
+#c_ready4interview_banner p {
+	color: white;
+	font-size: 50px;
+	text-align: center;
+	width: 100%;
+	
+	padding-top: 25px;
+	height: 150px;
+	box-sizing: border-box;
+	font-family: "Elkwood";
+	
+	position: absolute;
+	bottom: 0;
+}
+
+#c_ready4interview_form {
+	background: #00A6A4;
+	color: white;
+	width: 700px;
+	height: 75px;
+	text-align: center;
+	line-height: 75px;
+	font-family: "AvenirNextLTPro-Regular";
+	box-shadow: 0 0 30px #000000;
+}
+
+#c_ready4interview_content {
+	margin-top: 50px;
+	background: white;
+	box-shadow: 0 0 30px #000000;
+	width: 700px;
+	min-height: 900px;
+	font-family: "AvenirNextLTPro-Regular";
+}
+
+#c_ready4interview_left {
+	padding: 50px 0 0 30px;
+}
+
+#c_ready4interview_left li {
+	float: left;
+	padding-bottom: 10px;
+}
+
+#c_ready4interview_left img {
+	float: left;
+}
+
+#c_ready4interview_left p {
+	width: 550px;
+	float: left;
+	padding: 20px 0 0 15px;
+}
+
+#c_ready4interview_content p.doubleline {
+	padding-top: 15px;
+}
+
+#interview2img {
+	background: url("images/banner-interview2.jpg");
+	background-position: 0 300px;
+	background-size: 100%;
+	height: 225px;
+	width: 700px;
+	clear: both;
+}
+
+#c_ready4interview_right {
+	padding: 10px 30px 0 0 ;
+}
+
+#c_ready4interview_right li {
+	float: right;
+	padding-bottom: 10px;
+}
+
+#c_ready4interview_right img {
+	float: right;
+}
+
+#c_ready4interview_right p {
+	text-align: right;
+	width: 550px;
+	float: right;
+	padding: 20px 15px 0 0;
+}
+
+.highlight { 
+	color: #00A6A4;
+	font-weight: bold;
+}
+
+/* CREATIVES - SIGN UP */
+
+#c_signup {
+	background: url("images/banner-creatives_signup.jpg");
+	width: 100%;
+	height: 465px;
+	position: relative;
+	background-position: left -50px;
+}
+
+#c_signup p {
+	color: white;
+	font-size: 45px;
+	text-align: center;
+	width: 100%;
+	
+	padding-top: 15px;
+	height: 140px;
+	box-sizing: border-box;
+	font-family: "Elkwood";
+	
+	position: absolute;
+	bottom: 0;
+}
+
+#c_signup p span {
+	font-size: 60px;
+}
+
+c_signupContent_form {
+	
+}
+
+#c_signupContent {
+	padding: 50px 0 0 50px;
+}
+
+#c_signupContent img {
+	vertical-align: middle;
+}
+
+#c_signupContent input {
+	border: none;
+	height: 20px;
+}
+
+#c_signup_user {
+	width: 300px;
+	margin-right: 50px;
+}
+
+#c_signup_rememberMeLabel {
+	margin-left: 22px;
+}
+
+#c_signup_rememberMeLabel, #c_signup_forgotpass  {
+	font-size: medium;
+}
+
+#c_signup_forgotpass {
+	margin-left: 278px;
+}
+
+#c_signup_loginBtn {
+	text-decoration: none;
+	background: #CD68A8;
+	color: white;
+	padding: 2px 5px;
+	font-family: "Elkwood";
+	font-size: 30px;
+	line-height: 100px;
+	margin-left: 465px;
+}
+
+#c_signup_loginBtn img {
+	height: 25px;
+}
