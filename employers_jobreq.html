@@ -2,7 +2,7 @@
 <html>
 	<head>
 		<!-- Author: Mark Faderon -->
-		<title>Post a Job</title>
+		<title>Job Requirements</title>
 		<link rel="icon" href="favicon.png" sizes="32x32" type="image/png">
 		<link rel="stylesheet" href="style.css">
 	</head>
@@ -34,55 +34,44 @@
 				<div id="content">
 					<div id="form">
 						<div id="formHeader">
-							<span id="heading">POST A JOB</span>
+							<span id="heading">POST A JOB</span> 
 							<span class="floatRight"><span>*</span> Relavant Info must be provided</span>
+							<br/>
+							<i>Job requirements</i>
 						</div>
-						<ul id="e_postjobLeft" class="floatLeft ulCircleStyle">
+						<ul id="e_jobreqLeft" class="floatLeft ulCircleStyle">
+							<input type="checkbox" id="e_jobreq_OnlyLocal" checked /><label for="e_jobreq_OnlyLocal"> Only local canditates</label><br/>
 							<li>
-								Company Name<span class="fontSizeSmall verticalAlignTop">*</span> <br/>
-								<input type="text" id="e_postjob_CName" placeholder=" Please write">
+								Experience<span class="fontsizeSmall verticalAlignTop">*</span> <br/>
+								<input type="text" placeholder=" Please write"> <br/>
+								<input type="checkbox" id="e_jobreq_noExp" checked /><label for="e_jobreq_noExp" class="fontSizeSmall"> No experience is required</label>
 							</li>
 							<li>
-								Job Description<span class="fontSizeSmall verticalAlignTop">*</span> <br/>
-								<span class="fontSizeSmall"><i>Responsibilities, work experience, skills, or education</i></span> <br/>
-								<textarea id="e_postjob_Desc" cols="30" rows="10" placeholder=" Please write"></textarea>
+								Licence <br/>
+								<input type="text" placeholder=" Please write">
+							</li>
+							<li>
+								Languages <br/>
+								<select name="" id="">
+									<option value="" disabled selected>Please select</option>
+								</select>
+								<br/>
+								<span class="fontSizeSmall"><a href=""><b>+ Add more</b></a></span>
 							</li>
 						</ul>
-						<ul id="e_postjobRight" class="floatRight ulCircleStyle">
+						<ul id="e_jobreqRight" class="floatRight ulCircleStyle">
 							<li>
-								Job Title<span class="fontSizeSmall verticalAlignTop">*</span> <br/>
-								<input type="text" id="e_postjob_Title" placeholder=" Please write">
-							</li>
-							<li>
-								City, Region or Postcode<span class="fontSizeSmall verticalAlignTop">*</span> <br/>
-								<input type="text" id="e_postjob_CityRegPost" placeholder=" Please write">
-							</li>
-							<li>
-								Job Type <br/>
-								<select name="e_postjob_JTypeDDL" id="e_postjob_JType">
+								Time experience<span class="fontsizeSmall verticalAlignTop">*</span> <br/>
+								<select name="" id="">
 									<option value="" disabled selected>Please select</option>
-									<option value="">Full-time</option>
-									<option value="">Permanent</option>
-									<option value="">Contract</option>
-									<option value="">Internship</option>
-									<option value="">Part-time</option>
-									<option value="">Temporary</option>
-									<option value="">Apprenticeship</option>
-									<option value="">Casual</option>
-									<option value="">Volunteer</option>
 								</select>
 							</li>
 							<li>
-								Salary <br/>
-								<input type="number" id="e_postjob_Salary" placeholder=" $ 0">
+								Education<span class="fontsizeSmall verticalAlignTop">*</span> <br/>
+								<select name="" id="">
+									<option value="" disabled selected>Please select</option>
+								</select>
 							</li>
-							
-							<span id="e_postjob_perTime">
-								<input type="checkbox" name="perTime" id="e_postjob_PHour" checked /><label for="e_postjob_PHour" class="fontSizeSmall"> Per hour</label><br/>
-								<input type="checkbox" name="perTime" id="e_postjob_PDay" /><label for="e_postjob_PDay" class="fontSizeSmall"> Per day</label><br/>
-								<input type="checkbox" name="perTime" id="e_postjob_PMonth" /><label for="e_postjob_PMonth" class="fontSizeSmall"> Per month</label><br/>
-								<input type="checkbox" name="perTime" id="e_postjob_PYear" /><label for="e_postjob_PYear" class="fontSizeSmall"> Per year</label><br/>
-							</span>
 						</ul>
 						<div id="formFooter">
 							<a href="" class="button">CONTINUE</a>

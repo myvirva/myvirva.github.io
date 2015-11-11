@@ -219,6 +219,11 @@ nav#mainnav ul li:last-child a img {
 
 /* CONTENT */
 
+#contentArea {
+	position: relative;
+	overflow: hidden;
+}
+
 #content {
 	width: 700px;
 	min-height: 1000px;
@@ -242,19 +247,19 @@ nav#mainnav ul li:last-child a img {
 }
 
 #form ul li {
-	margin-bottom: 25px;
+	margin-top: 25px;
 }
 
 #formHeader {
 	padding: 10px 25px 0 50px;
-	
 }
 
 #formHeader #heading {
 	font-family: "Elkwood";
 	text-decoration: underline;
 	font-size: 50px;
-	line-height: 100px;
+	padding-top: 50px;
+	display: inline-block;
 }
 
 #formHeader span.floatRight {
@@ -287,12 +292,14 @@ nav#mainnav ul li:last-child a img {
 
 #sidebar {
 	width: 200px;
-	height: 1400px;
-	float: right;
+	height: 100%;
+	
 	padding-top: 25px;
 	text-align: center;
 	background: #17738F;
 	box-sizing: border-box;
+	position: absolute;
+	right: 0;
 }
 
 /* SUB NAV */
@@ -679,9 +686,9 @@ label[for=rememberMe] {
 
 #c_ready4interview_banner {
 	width: 100%;
-	height: 465px;
+	height: 350px;
 	background-image: url('images/banner-interview1.jpg');
-	background-size: 100% 1375px;
+	background-size: 100%;
 	position: relative;
 }
 
@@ -777,7 +784,7 @@ label[for=rememberMe] {
 	font-weight: bold;
 }
 
-/* CREATIVES - SIGN UP */
+/* CREATIVES - SIGN UP & EMPLOYERS - SIGN UP */
 
 #c_signup {
 	background: url("images/banner-creatives_signup.jpg");
@@ -787,9 +794,19 @@ label[for=rememberMe] {
 	background-position: left -50px;
 }
 
-#c_signup p {
+#e_signup {
+	background: url("images/banner-employers_signup.jpg");
+	width: 100%;
+	height: 485px;
+	position: relative;
+	background-position: left -300px;
+	background-size: 100%;
+}
+
+#c_signup p, 
+#e_signup p {
 	color: white;
-	font-size: 45px;
+	font-size: 40px;
 	text-align: center;
 	width: 100%;
 	
@@ -802,45 +819,48 @@ label[for=rememberMe] {
 	bottom: 0;
 }
 
-#c_signup p span {
-	font-size: 60px;
+#c_signup p span, 
+#e_signup p span {
+	font-size: 55px;
 }
 
-c_signupContent_form {
-	
-}
-
-#c_signupContent {
+#c_signupContent, 
+#e_signupContent {
 	padding: 50px 0 0 50px;
 }
 
-#c_signupContent img {
+#c_signupContent img, 
+#e_signupContent img {
 	vertical-align: middle;
 }
 
-#c_signupContent input {
+#c_signupContent input, 
+#e_signupContent input {
 	border: none;
 	height: 20px;
 }
 
-#c_signup_user {
+#c_signup_user, 
+#e_signup_user {
 	width: 300px;
 	margin-right: 50px;
 }
 
-#c_signup_rememberMeLabel {
+#c_signup_rememberMeLabel, 
+#e_signup_rememberMeLabel {
 	margin-left: 22px;
 }
 
-#c_signup_rememberMeLabel, #c_signup_forgotpass  {
+label[for=c_signup_rememberMe], #c_signup_forgotpass, 
+label[for=e_signup_rememberMe], #e_signup_forgotpass  {
 	font-size: medium;
 }
 
-#c_signup_forgotpass {
+#c_signup_forgotpass, #e_signup_forgotpass {
 	margin-left: 278px;
 }
 
-#c_signup_loginBtn {
+#c_signup_loginBtn, #e_signup_loginBtn {
 	text-decoration: none;
 	background: #CD68A8;
 	color: white;
@@ -851,6 +871,76 @@ c_signupContent_form {
 	margin-left: 465px;
 }
 
-#c_signup_loginBtn img {
+#c_signup_loginBtn img, #e_signup_loginBtn img {
 	height: 25px;
+}
+
+/* EMPLOYERS - POST A JOB - JOB REQUIREMENTS */
+
+#e_jobreqLeft {
+	margin-left: 75px;
+}
+
+#e_jobreq_OnlyLocal, label[for=e_jobreq_OnlyLocal] {
+	margin-top: 50px;
+}
+
+#e_jobreqRight {
+	margin: 70px 100px 0 0;
+}
+
+/* WELCOME PAGE */
+
+#welcomePageContent {
+	background: url("images/banner-welcomepage.jpg");
+	width: 100%;
+	height: 600px;
+	background-size: 100%;
+	background-position: left -400px;
+	position: relative;
+}
+
+#welcomePageContent p {
+	color: white;
+	font-size: 70px;
+	text-align: center;
+
+	padding-top: 10px;
+	height: 150px;
+	box-sizing: border-box;
+	font-family: "Elkwood";
+	
+	width: 100%;
+	position: absolute;
+	top: 50%;
+	margin-top: -75px;
+}
+
+#welcomePageContent p span {
+	font-size: xx-large;
+	font-family: "AvenirNextLTPro-Regular";
+}
+
+#welcomePageNav {
+	height: 50px;
+	position: absolute;
+	bottom: 0;
+	line-height: 50px;
+	width: 100%;
+	text-align: center;
+}
+
+#welcomePageNav li {
+	display: inline;
+}
+
+#welcomePageNav a {
+	color: white;
+	text-decoration: none;
+	border-right: 2px solid white;
+	padding: 0 5px;
+}
+
+#welcomePageNav ul li:last-child a {
+	border-right: none;
 }

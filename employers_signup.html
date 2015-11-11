@@ -2,7 +2,7 @@
 <html>
 	<head>
 		<!-- Author: Mark Faderon -->
-		<title>Ready for the Interview?</title>
+		<title>Employers Signup</title>
 		<link rel="icon" href="favicon.png" sizes="32x32" type="image/png">
 		<link rel="stylesheet" href="style.css">
 	</head>
@@ -11,8 +11,8 @@
 			<header>
 				<img src="images/virva-logo.png" alt="Virva Logo" id="logo">
 				<ul>
-					<li id="active"><a href="">CREATIVES</a></li>
-					<li><a href="">EMPLOYERS</a></li>
+					<li><a href="">CREATIVES</a></li>
+					<li id="active"><a href="">EMPLOYERS</a></li>
 				</ul>
 				<div id="toolbarRight">
 					<input type="text" placeholder=" Search">
@@ -20,46 +20,36 @@
 					<a href=""><img src="images/menu-icon.png" alt="Menu" id="menu"></a>
 				</div>
 			</header>
-			<nav id="mainnav">
-				<ul>
+			<nav id="mainnav" >
+				<ul style="display:none">
 					<li><a href=""><img src="images/profile-icon.png" alt="Profile Icon">PROFILE</a></li>
-					<li><a href=""><img src="images/jobs-icon.png" alt="Jobs Icon">JOBS</a></li>
+					<li><a href="" id="selected"><img src="images/jobs-icon.png" alt="Jobs Icon">JOBS</a></li>
 					<li><a href=""><img src="images/messages-icon.png" alt="">MESSAGES</a></li>
 					<li><a href=""><img src="images/notification-icon.png" alt="Notification Icon">NOTIFICATIONS</a></li>
-					<li><a href="" id="selected"><img src="images/help-icon.png" alt="Help Icon">A HELPING HAND</a></li>
+					<li><a href=""><img src="images/help-icon.png" alt="Help Icon">A HELPING HAND</a></li>
 				</ul>
 			</nav>
 			<div id="contentArea">
 				<div id="content">
-					<div id="c_ready4interview_banner">
+					<div id="e_signup">
 						<p class="transparent-Dark-BG">
-							ARE YOU READY FOR THE<br/>INTERVIEW?
+							ARE YOU AN EMPLOYER? <br/>
+							<span>WELCOME TO VIRVA.</span>
 						</p>
 					</div>
-					<div id="c_ready4interview_form">
-						<p>
-							Ok there is a 8 step sequence to get you ready for the interview.
-						</p>
+					<div id="form">
+						<div id="e_signupContent">
+							<img src="images/circle.png" alt="">
+							<input type="text" id="e_signup_user" placeholder=" Phone, email or username">
+							<img src="images/circle.png" alt="">
+							<input type="password" id="e_signup_pass" placeholder=" Password">
+							<br/>
+							<input type="checkbox" id="e_signup_rememberMe" checked><label for="e_signup_rememberMe"> Remember me</label>
+							<a id="e_signup_forgotpass" href="">Forgot Password?</a>
+							<br/>
+							<a href="" id="e_signup_loginBtn"> <img src="images/pencil-icon.png" alt=""> LOGIN</a>
+						</div>
 					</div> <!-- END FORM -->
-					<div id="c_ready4interview_content">
-						<ul id="c_ready4interview_left">
-							<li><img src="images/1-icon.png" alt="#1"><p>Research <span class="highlight">everything about the company.</span><p><li>
-							<li><img src="images/2-icon.png" alt="#2"><p>Learn and answer <span class="highlight">basic interview questions</span></p><li>
-							<li><img src="images/3-icon.png" alt="#3"><p class="doubleline">i have done a <span class="highlight">practice interview</span> and have gotten <span class="highlight">feedback from a friend or family member</span></p><li>
-							<li><img src="images/4-icon.png" alt="#4"><p class="doubleline">i know which of my <span class="highlight">skills most relate to the job</span>, and how to communicate this to the interviewer.</p><li>
-						</ul>
-						<div id="interview2img"></div>
-						<ul id="c_ready4interview_right">
-							<li>
-								<img src="images/5-icon.png" alt="#5">
-								<p class="doubleline">Have i tried on my <span class="highlight">interview outfit?</span> And it is free of holes? Ironed and makes me feel <span class="highlight">comfortable and confident?</span></p>
-							</li>
-							<li><img src="images/6-icon.png" alt="#6"><p class="doubleline">I have <span class="highlight">prepared at least 5 interview questions</span> I am going to ask the employer/Interviewer</p></li>
-							<li><img src="images/7-icon.png" alt="#7"><p class="doubleline">I have a <span class="highlight">pen and paper</span>, I know how to <span class="highlight">turn my phone off</span> and <span class="highlight">know the directions to the interview</span> so I am there on time</p></li>
-							<li><img src="images/8-icon.png" alt="#8"><p>I am going to <span class="highlight">email and thank my interviewer</span> for their time.</p></li>
-						</ul>
-						
-					</div>
 				</div> <!-- END CONTENT -->
 				<div id="sidebar">
 					<img src="images/sidebar-ads.jpg" alt="ADS">
