@@ -55,6 +55,21 @@ ul {
 	background: rgba(0, 0, 0, 0.3);
 }
 
+
+.highlight { 
+	color: #00A6A4;
+	font-weight: bold;
+}
+
+.button {
+	font-family: "Elkwood";
+	background: #EFD21A !important;
+	color: #329EA1 !important;
+	padding: 10px;
+	font-size: 25px;
+	text-decoration: none;
+}
+
 input[type=checkbox].css-checkbox {
 	position:absolute; 
 	z-index:-1000; 
@@ -278,15 +293,6 @@ nav#mainnav ul li:last-child a img {
 	height: 100px;
 	padding-top: 25px;
 	box-sizing: border-box; /* 100% width + padding */
-}
-
-#formFooter a.button {
-	font-family: "Elkwood";
-	background: #EFD21A;
-	color: #329EA1;
-	padding: 10px;
-	font-size: 25px;
-	text-decoration: none;
 }
 
 
@@ -779,10 +785,6 @@ label[for=rememberMe] {
 	padding: 20px 15px 0 0;
 }
 
-.highlight { 
-	color: #00A6A4;
-	font-weight: bold;
-}
 
 /* CREATIVES - SIGN UP & EMPLOYERS - SIGN UP */
 
@@ -943,4 +945,199 @@ label[for=e_signup_rememberMe], #e_signup_forgotpass  {
 
 #welcomePageNav ul li:last-child a {
 	border-right: none;
+}
+
+/* 8.1 A HELPING HAND - HOW TO WRITE PERFECT RESUME / CV */
+
+#c_writeResumeCV_banner {
+	width: 100%;
+	height: 350px;
+	background-image: url('images/banner-helphand-resume.jpg');
+	background-size: 100%;
+	position: relative;
+}
+
+#c_writeResumeCV_banner p {
+	color: white;
+	font-size: 50px;
+	text-align: center;
+	width: 100%;
+	
+	padding-top: 25px;
+	height: 150px;
+	box-sizing: border-box;
+	font-family: "Elkwood";
+	
+	position: absolute;
+	bottom: 0;
+}
+
+#c_writeResumeCV_form {
+	background: #00A6A4;
+	color: white;
+	width: 700px;
+	padding: 25px 30px;
+	text-align: center;
+	font-family: "AvenirNextLTPro-Regular";
+	box-shadow: 0 0 30px #000000;
+	box-sizing: border-box;
+}
+
+#c_writeResumeCV_content h2 {
+	font-family: "Elkwood";
+	color: #00A6A4;
+	text-align: center;
+	font-weight: normal;
+	font-size: 40px;
+}
+
+#c_writeResumeCV_content p {
+	font-family: "AvenirNextLTPro-Regular";
+}
+
+#c_writeResumeCV_content li {
+	width: 100%;
+	background: white;
+	margin-top: 30px;
+	padding-top: 10px;
+	box-shadow: 0 0 20px #000000;
+	position: relative;
+	min-height: 275px;
+	box-sizing: border-box;
+}
+
+#c_writeResumeCV_content li > img {
+	margin: 0 auto;
+	display: block;
+}
+
+#c_writeResumeCV_content li > div {
+	background: #00A6A4;
+	width: 140px;
+	height: 140px;
+}
+
+#c_writeResumeCV_content li > div > img {
+	width: 100px;
+	height: 100px;
+}
+
+#c_writeResumeCV_content li:nth-child(odd) > div {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+}
+
+#c_writeResumeCV_content li:nth-child(odd) > div img {
+	margin: 20px 0 0 -15px;
+}
+
+#c_writeResumeCV_content li:nth-child(odd) > p {
+	padding: 25px;
+	text-align: left;
+}
+
+#c_writeResumeCV_content li:nth-child(even) > p {
+	padding: 25px;
+	text-align: right;
+}
+
+#c_writeResumeCV_content li:nth-child(even) > div {
+	position: absolute;
+	left: 0;
+	bottom: 25px;
+}
+
+#c_writeResumeCV_content li:nth-child(even) > div img {
+	margin: 20px 0 0 50px;
+}
+
+#c_writeResumeCV_content li:last-child {
+	background: #00A6A4;
+}
+
+#c_writeResumeCV_content li:last-child > img {
+	width: 65px;
+	height: 65px;
+}
+
+#c_writeResumeCV_content li:last-child > p {
+	text-align: center;
+	color: white;
+	padding: 0;
+}
+
+#c_writeResumeCV_content li:last-child > textarea {
+	display: block;
+	margin: 15px auto;
+}
+
+#c_writeResumeCV_content li:last-child > span {
+	display: block;
+	text-align: right;
+	padding: 0 60px 25px 0;
+}
+
+/* 8.2 HELPING HAND - EXECUTING THE PERFECT COVER LETTER */
+
+#c_executingperfectCV_banner {
+	width: 100%;
+	height: 350px;
+	background-image: url('images/banner-executingperfectCV.jpg');
+	background-size: 100%;
+	position: relative;
+	background-position: 0 -400px;
+}
+
+#c_executingperfectCV_banner p {
+	color: white;
+	font-size: 50px;
+	text-align: center;
+	width: 100%;
+	
+	padding-top: 25px;
+	height: 150px;
+	box-sizing: border-box;
+	font-family: "Elkwood";
+	
+	position: absolute;
+	bottom: 0;
+}
+
+#c_executingperfectCV_form {
+	background: #00A6A4;
+	color: white;
+	width: 700px;
+	padding: 25px 30px;
+	text-align: center;
+	font-family: "AvenirNextLTPro-Regular";
+	box-shadow: 0 0 30px #000000;
+	box-sizing: border-box;
+}
+
+#c_executingperfectCV_content li {
+	width: 100%;
+	background: white;
+	margin-top: 30px;
+	box-shadow: 0 0 20px #000000;
+	box-sizing: border-box;
+}
+
+#c_executingperfectCV_content h2 {
+	text-align: center;
+	font-family: "Elkwood";
+	color: #00A6A4;
+	padding: 15px 0;
+	font-weight: 500;
+	font-size: 30px;
+}
+
+#c_executingperfectCV_content img {
+	width: 100%;
+}
+
+#c_executingperfectCV_content p {
+	text-align: center;
+	font-family: "AvenirNextLTPro-Regular";
+	padding: 15px 0;
 }
